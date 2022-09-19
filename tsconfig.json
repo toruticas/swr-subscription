@@ -17,9 +17,12 @@
     "target": "es5",
     "outDir": "./dist",
     "types": ["react", "node", "jest"],
-    "rootDir": "./"
+    "rootDir": "./",
+    "paths": {
+      "swr-subscription": ["./src/index.ts"]
+    }
   },
-  "include": ["src/**/*"],
+  "exclude": ["./**/dist", "examples"],
   "watchOptions": {
     "watchFile": "useFsEvents",
     "watchDirectory": "useFsEvents",
